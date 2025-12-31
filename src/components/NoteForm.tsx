@@ -1,5 +1,5 @@
 import React,{ useEffect,useState } from "react";
-import type { Note, Props } from "../types";
+import type {Props } from "../types";
 import "./component.css"
 
 export default function NoteForm({onAdd, onUpdate, editNote}:Props){
