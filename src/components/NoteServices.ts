@@ -1,7 +1,7 @@
 import axios from "axios";
 import type { Note } from "../types";
 
-const API_URL = "http://localhost:3000/notes"
+const API_URL = "https://note-crud-backend-production.up.railway.app/notes"
 
 export const GetNotes = async(): Promise<Note[]>=>{
     const res = await axios.get<Note[]>(API_URL)
