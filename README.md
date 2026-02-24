@@ -1,73 +1,127 @@
-# React + TypeScript + Vite
+📒 NotesIn-AJH
+A lightweight and minimal note-taking web application inspired by Google Keep.
+Built using React, TypeScript, and Vite for fast and modern frontend development.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🔗 Live Demo: https://notesin-ajh.vercel.app/
 
-Currently, two official plugins are available:
+🔗 Repository: https://github.com/Fadlirmn/notes-frontend
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+✨ Features
 
-## React Compiler
+🆕 Create new notes instantly
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+📝 View notes in a clean, organized layout
 
-## Expanding the ESLint configuration
+✏️ Edit existing notes
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+🗑️ Delete notes
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+📱 Responsive UI
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+⚡ Fast performance powered by Vite
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+🛠 Tech Stack
+Technology	Purpose
+React	UI Library
+TypeScript	Type Safety
+Vite	Build Tool & Dev Server
+CSS / Tailwind	Styling
+📸 Preview
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+You can add screenshots here later:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+/screenshots/home.png
+/screenshots/create-note.png
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Example:
+
+![App Screenshot](./screenshots/home.png)
+🚀 Getting Started
+1️⃣ Clone the Repository
+git clone https://github.com/Fadlirmn/notes-frontend.git
+cd notes-frontend
+2️⃣ Install Dependencies
+npm install
+3️⃣ Run Development Server
+npm run dev
+
+Open in browser:
+
+http://localhost:5173
+📂 Project Structure
+notes-frontend/
+├── public/
+├── src/
+│   ├── components/
+│   ├── pages/
+│   ├── styles/
+│   ├── App.tsx
+│   └── main.tsx
+├── package.json
+├── tsconfig.json
+└── vite.config.ts
+🧠 How It Works
+
+Notes are managed using React state.
+
+CRUD operations update the UI instantly.
+
+The application focuses on simplicity and speed.
+
+Can be extended to integrate with a backend API.
+
+🔮 Future Improvements
+
+🔐 User authentication
+
+☁️ Cloud/database persistence
+
+🏷️ Tags or categories
+
+🔎 Search & filter
+
+🌙 Dark mode
+
+💾 LocalStorage autosave
+
+📦 Backend integration (REST API)
+
+🌐 Deployment
+
+This project is deployed on Vercel.
+
+To deploy your own version:
+
+npm run build
+
+Then upload the dist/ folder to Vercel or connect the GitHub repository directly.
+
+🤝 Contributing
+
+Contributions are welcome!
+
+Fork the project
+
+Create your feature branch
+
+git checkout -b feat/amazing-feature
+
+Commit your changes
+
+git commit -m "Add amazing feature"
+
+Push to the branch
+
+git push origin feat/amazing-feature
+
+Open a Pull Request
+
+📄 License
+
+This project is licensed under the MIT License.
+Feel free to use and modify it.
+
+👨‍💻 Author
+
+Developed by Fadlirmn
+If you like this project, consider giving it a ⭐ on GitHub!
