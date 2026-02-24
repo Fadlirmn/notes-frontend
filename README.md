@@ -41,7 +41,7 @@ Built using **React, TypeScript, and Vite** for fast and modern frontend develop
 > Add screenshots inside a `/screenshots` folder and reference them like this:
 
 ```md
-![App Screenshot](./screenshots/home.png)
+![App Screenshot](./img/display.png)
 ```
 
 ---
