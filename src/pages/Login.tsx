@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { useAuthStore } from '../store/useAuthStore';
 import { api } from '../services/api';
 import { Mail, Lock, Loader2, ArrowRight } from 'lucide-react';
-import { cn } from '../utils/cn';
 
 interface LoginProps {
   onToggleAuth: () => void;

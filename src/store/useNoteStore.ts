@@ -1,5 +1,5 @@
 import { create } from 'zustand';
-import type { Note, NoteStore } from '../types';
+import type { NoteStore } from '../types';
 import { api } from '../services/api';
 
 export const useNoteStore = create<NoteStore>((set, get) => ({
@@ -99,7 +99,7 @@ export const useNoteStore = create<NoteStore>((set, get) => ({
     }));
   },
 
-  restoreNote: async (id) => {
+  restoreNote: async (_id) => {
     // If it was "deleted" (soft delete not supported by backend yet, so we just re-fetch or ignore)
     await get().fetchNotes();
   },

@@ -5,7 +5,6 @@ import {
   RefreshCw, 
   Settings, 
   Grid, 
-  List, 
   Lightbulb, 
   Bell, 
   Edit3, 
