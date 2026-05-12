@@ -1,0 +1,97 @@
+@import "tailwindcss";
+
+:root {
+  --primary: #1a73e8;
+  --secondary: #444746;
+  --tertiary: #fbbc04;
+  --neutral: #202124;
+  --surface: #ffffff;
+  --container: #f0f4f9;
+  
+  --font-headline: "Roboto Flex", sans-serif;
+  --font-body: "Roboto Flex", sans-serif;
+  --font-label: "Roboto Flex", sans-serif;
+}
+
+.dark {
+  --primary: #e0e0e0;
+  --secondary: #9aa0a6;
+  --tertiary: #03dac6;
+  --neutral: #e8eaed;
+  --surface: #202124;
+  --container: #2d2e30;
+  
+  --font-headline: "Manrope", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-label: "JetBrains Mono", monospace;
+}
+
+@theme {
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-tertiary: var(--tertiary);
+  --color-neutral: var(--neutral);
+  --color-surface: var(--surface);
+  --color-container: var(--container);
+  
+  --font-headline: var(--font-headline);
+  --font-body: var(--font-body);
+  --font-label: var(--font-label);
+}
+
+/* Note Background Colors - Light Mode */
+.note-bg-default { background-color: var(--surface) !important; }
+.note-bg-red { background-color: #f28b82 !important; }
+.note-bg-orange { background-color: #fbbc04 !important; }
+.note-bg-yellow { background-color: #fff475 !important; }
+.note-bg-green { background-color: #ccff90 !important; }
+.note-bg-teal { background-color: #a7ffeb !important; }
+.note-bg-blue { background-color: #cbf0f8 !important; }
+.note-bg-darkblue { background-color: #aecbfa !important; }
+.note-bg-purple { background-color: #d7aefb !important; }
+.note-bg-pink { background-color: #fdcfe8 !important; }
+.note-bg-brown { background-color: #e6c9a8 !important; }
+.note-bg-gray { background-color: #e8eaed !important; }
+
+/* Note Background Colors - Dark Mode */
+.dark .note-bg-default { background-color: #1e1e1e !important; }
+.dark .note-bg-red { background-color: #5c2b29 !important; }
+.dark .note-bg-orange { background-color: #614a19 !important; }
+.dark .note-bg-yellow { background-color: #635d19 !important; }
+.dark .note-bg-green { background-color: #345920 !important; }
+.dark .note-bg-teal { background-color: #16504b !important; }
+.dark .note-bg-blue { background-color: #2d555e !important; }
+.dark .note-bg-darkblue { background-color: #1e3a5f !important; }
+.dark .note-bg-purple { background-color: #42275e !important; }
+.dark .note-bg-pink { background-color: #5b2245 !important; }
+.dark .note-bg-brown { background-color: #442f19 !important; }
+.dark .note-bg-gray { background-color: #3c3f43 !important; }
+
+@layer base {
+  body {
+    @apply bg-surface text-neutral font-body transition-colors duration-200;
+  }
+  
+  h1, h2, h3 {
+    @apply font-headline font-medium;
+  }
+}
+
+/* Google Keep style scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #bdc1c6;
+  border-radius: 4px;
+}
+.dark ::-webkit-scrollbar-thumb {
+  background: #5f6368;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #9aa0a6;
+}
